@@ -16,6 +16,15 @@ p{
     width:100%;
 
 }
+.wrapped2 /*Hela sidan*/
+{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    height:100vh;
+    width:100%;
+
+}
 
 #welcometext{
     line-height:1em;

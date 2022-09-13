@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <script src="wheaterAPI.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Consolas">
+    <script src="https://kit.fontawesome.com/5605743a65.js" crossorigin="anonymous"></script>
+    <title>Vädertjänst!</title>
+</head>
+<body>
+ 
+<div class="wrapped">
+
+    <div class="content" id="content">
+         <button class="gobackBtn" onclick="gobackBtn()"><i class="fa-solid fa-house fa-2xl"></i></button>
+        <h1 id="rutgerbot"> Välkommen </h1> 
+
+        <div class="wheaterwindow"> <span id="wheatertext"> Sök på en stad, tyvärr funkar inte lokala städer!
+        </span>
+        <div class="picturesSun" id="sunny"> <img src="suntrue.png" id="suntrue" alt=""> </div>
+        <div class="picturesCold" id="cold"> <img src="coldstockholm.png" id="suncold" alt=""></div>
+        <div class="wheaterAPI" id="changeWheater">
+            <p><input class="city" id="city" placeholder="Skriv in stad!"> </input>
+              <button onclick="GetWheater()" class="wheaterbtn"> <p id="datatext2">Hämta väder</p></button></p>
+        </div>
+    
+    
+        
+      
+      
+
+
+
+
+</body>
+</html>

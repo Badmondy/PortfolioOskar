@@ -1,0 +1,234 @@
+body{
+    background-image: url("mountains.jfif");
+    background-size:cover;
+    height:100%;
+    background-repeat: no-repeat;
+}
+p{
+    margin:0;
+}
+.wrapped  /*Hela sidan*/
+{
+    display:flex;
+    justify-content:flex-end;
+    text-align:center;
+    height:100vh;
+    width:100%;
+
+}
+
+#welcometext{
+    line-height:1em;
+    font-family:'Consolas';
+    font-size:200%;
+    color:white;
+}
+.picturesSun,.picturesCold{
+    display:none;
+    
+}
+.gobackBtn{
+    display:flex;
+    position:absolute;
+    left:15%;
+    top:20%;
+    align-items:center;
+    border:solid 0px;
+    background-color:rgba(255, 255, 255, 0);
+    width: 2.5rem;
+    height:2.5rem;
+}
+.gobackBtn:hover{
+    background-color:rgba(13, 221, 228, 0.333);
+    border-radius:3em;
+}
+
+.picturesCold > img, .picturesSun > img{
+    width:50%;
+    margin-top:10%;
+}
+.wheaterwindow{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width:100%;
+    height:100%;
+}
+.wheaterbtn{
+    width:40%;
+    height:100%;
+}
+ .wheaterAPI{
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+#wheatertext{
+    color:black;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-image:linear-gradient(to right top,rgba(117, 141, 141, 0.807),rgba(229, 140, 24, 0.538),rgba(255, 15, 15, 0.812));
+    min-width:80%;
+    width:80%;
+    margin-top:5%;
+    height:80%;
+    border-radius:3em;
+    box-shadow: -20px 15px 25px 10px rgba(16, 50, 16, 0.333);
+}
+
+.terminal{
+    display:flex;
+    flex-direction: column;
+    background-color:black;
+    width:80%;
+    height:70%;
+    padding-bottom:2%;
+    color:white;
+    text-align:left;
+    border:solid rgb(157, 134, 134) 2px;
+}
+.professions{       /* Lilla glaset */ 
+    display:flex;
+    position: absolute;
+    top:15%;
+    justify-content: center;
+    flex-direction: column;
+    background-image:linear-gradient(to right top,rgba(65, 76, 80, 0.175),rgba(44, 72, 83, 0.337),rgba(245, 140, 28, 0.558));
+    width:10em;
+    border:solid 1.5px rgba(248, 248, 248, 0.814);
+    min-width:15em;
+    height:30em;
+    border-radius:3em;
+  
+}
+.cameraframe{
+    position: absolute;
+    width: 1em;
+    min-width:1em;
+    height:1em;
+    align-self: center;
+    top:0.5%;
+    border-radius:50%;
+    background-color: grey;
+    border:solid white 0.5px;
+}
+.lens{
+    position: relative;
+    width: 0.5em;
+    height:0.5em;
+    left:25%;
+    top:25%;
+    border-radius:50%;
+    background-color: rgba(103, 242, 235, 0.629);
+}
+.mobileframe{
+    position: absolute;
+    width: 90%;
+    top:5%;
+    min-width:50%;
+    min-height:80%;
+    border-radius:3em;
+    border: solid 0.1em rgba(255, 255, 255, 0.668);
+    height: 85%;
+    background-color: rgba(255, 0, 0, 0);
+    align-self: center;
+    box-shadow:inset 0px 0px 5px 1px rgb(255, 255, 255);
+    
+}
+
+.pictureplaceholder{ /* Grund för profilbild */ 
+    position: relative;
+    width:30%;
+    bottom:10%;
+    min-width:30%;
+    align-self:center;
+    height:10%;
+}
+.profil{ /*Profilbild*/
+    position: relative;
+    width:100%;
+    min-width:100%;
+    border-radius:50%;
+}
+.pinfo{
+    position: relative;
+    text-align:center;
+    font-family:"Consolas";
+    font-size:100%;
+    color:white;
+    line-height:1em;  
+}
+.emailbtn{
+    position: relative;
+    top:15%;
+    font-family: "AudioWide";
+    font-size:1em;
+    width:40%;
+    padding:0.3em;
+    min-width:40%;
+    align-self: center;
+    border-radius:3em;
+    background-color:coral;
+    border-color: rgba(255, 255, 255, 0);
+}
+.emailbtn:hover{
+    background-color: rgb(226, 86, 35);
+}
+
+.mysecretBtn{
+   font-size:.3rem;
+   margin-left:1%;
+}
+
+.mysecretBtn:hover{
+    background-color:rgb(9, 255, 0);
+}
+.wheaterbtn:hover{
+    background-color:rgb(9, 255, 0);
+}
+
+.inputconsole{
+    display:flex;
+    position: relative;
+    top:-5%;
+    left: -27%;
+    color:white;
+    flex-direction: row;
+}
+
+
+
+
+
+@media screen and ( max-width: 1300px){   
+        .getInput{
+            width:50%;
+        }
+       
+        #datatext{
+            display:none;
+        }
+        .inputconsole{
+            position: relative;
+            justify-content: center;
+            top:0%;
+            left:0%;
+
+        }
+        
+        .professions{
+            display:none;
+        }
+        .wrapped{
+            justify-content:center;
+        }
+
+}
+    

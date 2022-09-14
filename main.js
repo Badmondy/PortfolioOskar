@@ -32,11 +32,13 @@ function commando() {
         window.location.href = "chatbot.html";
         
     }else{
-
+        changed.innerHTML = help;
     }
        
     
 }
+
+
 
 
 function sendEmail() {

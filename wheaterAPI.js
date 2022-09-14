@@ -17,20 +17,26 @@ function GetWheater(){
         return res.json()
       })
       .then((response) => {
-
-        var temp = document.getElementById("wheatertext");
-        if(response.current.temp_c == 50){
-            temp.innerHTML = ("Släng dig i sjön!" + response.current.temp_c);
+       
+       
+       
+        var temp = document.getElementById("wheatertext")
+       
+        if(response.current.temp == " "){
+            temp.innerHTML = "Error" +city+ "dosen't exist!";
+        }
+        else if(response.current.temp_c == 50){
+            temp.innerHTML = ( "För varmt i:" +response.location.name+"Släng dig i sjön!" + response.current.temp_c);
             sun.style.display = "flex";
             cold.style.display = "none";
         }
         else if(response.current.temp_c < 8){
-            temp.innerHTML = ("Det är kallt i "+city+ " temp: " + response.current.temp_c + " celius.");
+            temp.innerHTML = ("Det är kallt i " + response.location.name + " temp: " + response.current.temp_c + " celius.");
             sun.style.display = "none";
             cold.style.display = "flex";
            
         }else if(response.current.temp_c > 8) {
-            temp.innerHTML = ("Det är varmt i "+city+ " temp: " + response.current.temp_c + " celius.");
+            temp.innerHTML = ("Det är varmt i "+response.location.name+ " temp: " + response.current.temp_c + " celius.");
             sun.style.display = "flex";
             cold.style.display = "none";
         }else{

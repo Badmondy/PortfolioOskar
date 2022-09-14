@@ -1,7 +1,7 @@
 var apiKey = "6b6d7c6a50824c9193e02456220609";
 
 
-let url = "http://api.weatherapi.com/v1/current.json?key=6b6d7c6a50824c9193e02456220609&q=Stockholm&aqi=no";
+let url = "https://api.weatherapi.com/v1/current.json?key=6b6d7c6a50824c9193e02456220609&q=Stockholm&aqi=no";
 
 
 
@@ -10,7 +10,7 @@ function GetWheater(){
     var city = document.getElementById("city").value;
     var sun = document.getElementById("sunny");
     var cold = document.getElementById("cold");
-    fetch("http://api.weatherapi.com/v1/current.json?key=6b6d7c6a50824c9193e02456220609&q="+city+"&aqi=no", {
+    fetch("https://api.weatherapi.com/v1/current.json?key=6b6d7c6a50824c9193e02456220609&q="+city+"&aqi=no", {
         method: 'get'
     })
     .then(res => {

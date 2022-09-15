@@ -7,6 +7,10 @@ body{
 p{
     margin:0;
 }
+
+#city,#getInput{
+    text-transform: lowercase;
+}
 .wrapped  /*Hela sidan*/
 {
     display:flex;

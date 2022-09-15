@@ -21,7 +21,32 @@ function GetWheater(){
        
        
         var temp = document.getElementById("wheatertext")
-       
+
+        
+
+        
+        if(response.current.temp_c > 18){
+            temp.innerHTML = ("Det är varmt i "+response.location.name+ " temp: " + response.current.temp_c + " celius.");
+            sun.style.display = "flex";
+            cold.style.display = "none";
+        }
+       /*  else if(response.current.temp_c < 17 ){
+            temp.innerHTML = ("Det är helt okej i "+response.location.name+ " temp: " + response.current.temp_c + " celius.");
+            sun.style.display = "none";
+            cold.style.display = "flex";
+        } */
+        else if(response.current.temp_c < 18){
+            temp.innerHTML = ("Det är kallt i " + response.location.name + " temp: " + response.current.temp_c + " celius.");
+            sun.style.display = "none";
+            cold.style.display = "flex";
+        }
+        else{
+            var notfound = "Den staden gick inte att hitta";
+            temp.innerHTML = notfound;
+            sun.style.display = "none";
+            cold.style.display = "none";
+        }
+     /*   
         if(response.current.temp == " "){
             temp.innerHTML = "Error" +city+ "dosen't exist!";
         }
@@ -44,7 +69,7 @@ function GetWheater(){
             temp.innerHTML = notfound;
             sun.style.display = "none";
             cold.style.display = "none";
-        }
+        } */
         
 
        

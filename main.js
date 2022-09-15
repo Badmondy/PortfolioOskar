@@ -16,7 +16,7 @@ function commando() {
         wheatervue.style.display = "none"; 
     }
     else if(fetched == "project"){
-        changed.innerHTML = text2;
+        changed.innerHTML = text2 + " <br>Kommandot: karta är nu tillgängligt!";
         wheatervue.style.display = "none";
     }
     else if(fetched == "clear"){
@@ -31,7 +31,10 @@ function commando() {
     }else if(fetched == "wheater"){
         window.location.href = "chatbot.html";
         
-    }else{
+    }else if(fetched == "karta"){
+        window.open('https://karta.oskarzz.com/ztech', '_blank');
+    }
+    else{
         changed.innerHTML = help;
     }
        

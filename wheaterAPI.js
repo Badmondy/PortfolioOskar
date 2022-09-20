@@ -23,7 +23,10 @@ function GetWheater(){
         var temp = document.getElementById("wheatertext")
 
         
-
+       if(response.error.code == 2008){
+        temp.style.fontSize = "150%";
+        temp.innerHTML = "Tvärr är mitt gratis prov av API:n slut";
+       } 
         
         if(response.current.temp_c > 18){
             temp.innerHTML = ("Det är varmt i "+response.location.name+ " temp: " + response.current.temp_c + " celius.");

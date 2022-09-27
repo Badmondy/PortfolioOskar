@@ -1,5 +1,5 @@
 var text = "Hej jag heter Oskar Markbäck Zeilon, bor precis utanför Hässleholm med sambo och hund.";
-var text2 = "Här kommer blivande projekt dyka upp:";
+var text2 = "Här är en lista över projekt jag gjort:";
 var empty  = "";
 var help = "Du kan använda dessa kommandon:<br>[project],[about],[clear],[restart],[?help],[wheater]"
 var apiKey = "6b6d7c6a50824c9193e02456220609";
@@ -42,8 +42,12 @@ function commando() {
 }
 
 
-
-
+function linkedinClicked(){
+    window.open('https://www.linkedin.com/in/oskar-markb%C3%A4ck-zeilon-139b2114b/')
+}
+function githubClicked(){
+    window.open('https://github.com/Badmondy')
+}
 function sendEmail() {
     var link = "mailto:oskarmarkback@gmail.com";
 

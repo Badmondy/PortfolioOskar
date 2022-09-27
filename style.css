@@ -121,6 +121,12 @@ p{
     border-radius:3em;
   
 }
+.fa-linkedin{
+color:blue;
+}
+.fa-linkedin:hover,.fa-github:hover{
+    color:rgb(139, 139, 200);
+}
 .cameraframe{
     position: absolute;
     width: 1em;
